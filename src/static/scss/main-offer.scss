@@ -1,0 +1,54 @@
+@import "__vars";
+@import "__mixins";
+@import "smart-grid";
+
+.it-offer {;
+  background: url("../img/main-offer/bg.jpg") no-repeat top;
+  background-size: cover;
+  position: relative;
+}
+
+.it-offer:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.it-offer__wrap {
+  text-align: center;
+  padding: 9% 0;
+  position: relative;
+
+}
+
+.it-offer__title {
+  font-size: rem(46px);
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.it-offer__subtitle {
+  font-size: rem(28px);
+  font-weight: 300;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.it-offer__buttons {
+  max-width: 260px;
+  width: 100%;
+  display: inline-block;
+
+}
+
+.it-offer__buttons .it-offer__btn {
+  padding: 15px 10px;
+}

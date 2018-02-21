@@ -1,0 +1,72 @@
+@import "__vars";
+@import "__mixins";
+@import "smart-grid";
+
+.it-advantages__list {
+  padding: 0;
+  margin: 0 0 -30px 0;
+  justify-content: center;
+  @include row-flex();
+}
+
+.it-advantages__item {
+  list-style-type: none;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 2%;
+  margin-bottom: 30px;
+  @include col();
+  @include size(3);
+  @include size-lg(6);
+  @include size-xs(12);
+}
+
+.it-advantages__inner-item {
+  max-width: 250px;
+  width: 100%;
+  text-align: center;
+}
+
+.it-advantages__img-box {
+  min-height: 90px;
+  max-width: 90px;
+  overflow: hidden;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.it-advantages__img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.it-advantages__title {
+  font-size: rem(18px);
+  font-weight: 700;
+  margin-bottom: 80px;
+  color: #333333;
+  position: relative;
+  min-height: 50px;
+}
+
+.it-advantages__title:before {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -50px;
+	left: 50%;
+	width: 24px;
+	height: 24px;
+     margin-left: -12px;
+	background: url("../img/arrow.png") no-repeat center;
+}
+
+.it-advantages__desc {
+  font-weight: 300;
+  font-size: rem(16px);
+}
