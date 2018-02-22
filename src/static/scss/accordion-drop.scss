@@ -1,0 +1,75 @@
+@import "__vars";
+@import "__mixins";
+@import "smart-grid";
+
+
+/******************* it-accordion_drop2 *******************/
+
+.it-accordion_drop2__wrap {
+  margin: 0;
+  padding: 0 35px;
+}
+
+.it-accordion_drop2__item {
+  list-style-type: none;
+}
+
+.it-accordion_drop2__toggle {
+  padding: 30px 20px 30px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.15);
+}
+
+.it-accordion_drop2__title {
+  font-size:  14px;
+  flex-grow: 1000;
+  flex-basis: 400px;
+}
+
+
+.it-accordion_drop2__sign-wrap {
+  position: absolute;
+  top: 50%;
+  left: -26px;
+  width: 43px;
+  height: 43px;
+  margin-top: -21.5px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.it-accordion_drop2__sign {
+  transition: all 0.3s ease;
+  border: 5px solid transparent;
+  border-left: 5px solid $main-color;
+}
+
+.it-accordion_drop2__sign-wrap.active .it-accordion_drop2__sign {
+  transform: rotate(90deg);
+  top: 54%;
+}
+
+.it-accordion_drop2__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 40px;
+}
+
+.it-accordion_drop2__desc {
+  width: 100%;
+  font-weight: 300;
+  font-family: "Ubuntu", sans-serif;
+  font-size: rem(14px);
+  flex-basis: 400px;
+  flex-grow: 1000;
+  padding-right: 5%;
+}
+

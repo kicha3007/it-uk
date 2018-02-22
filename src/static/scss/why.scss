@@ -2,48 +2,48 @@
 @import "__mixins";
 @import "smart-grid";
 
+.it-why {
+}
+
 .it-why__wrap {
-  border: 10px solid #c4c4c4;
+  margin-top: 60px;
+  position: relative;
+
+}
+
+.it-why__inner-wrap {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
+  border: 5px solid #c4c4c4;
 }
+
 
 .it-why__half {
   padding: 4% 4%;
   width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
   @include phones {
     width: 100%;
   }
 }
 
 .it-why__half--right {
-  background-color: rgba(176, 203, 31, 1);
+  background-color: $main-color;
 }
 
-.it-why__half-inner {
+.it-why__content {
   max-width: 330px;
   width: 100%;
 }
 
 .it-why__title {
-  font-size: rem(20px);
+  font-size: rem(16px);
   font-weight: 700;
-  margin-bottom: 40px;
-  margin-top: 30px;
+  margin-bottom: 25px;
 }
 
-.it-why__list {
-  padding: 0;
-  margin-bottom: 40px;
-}
-
-.it-why__list--indent {
-  margin-bottom: 20px;
+.it-why__title--color {
+  color: #ffffff;
 }
 
 .it-why__item {
@@ -58,54 +58,140 @@
   }
 }
 
-.it-why__item--color {
-  color: #ffffff;
-}
-
-.it-why__item:before {
-	content: '';
-	display: block;
-	position: absolute;
-	top: 6px;
-	left: 0;
-	width: 6px;
-	height: 6px;
-    border-radius: 50%;
-    background-color: #c4c4c4;
-}
-
-.it-why__item--color:before {
-  background-color: #ffffff;
-}
-
-.it-why__sum {
-  font-weight: 700;
-}
-
 .it-why__img-box {
-  min-height: 75px;
-  max-width: 179px;
+  width: 56px;
+  height: 56px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
-  margin-bottom: 15px;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  margin-bottom: 25px;
 }
 
-.it-why__amount {
-  font-weight: 700;
-  font-size: rem(36px);
-  color: #ffffff;
-  @include phones {
-    font-size: rem(32px);
-  }
+.it-why__img-box--left {
+  border: 2px solid rgba(209, 209, 209, 1);
+  position: relative;
+}
+
+.it-why__img-box--left:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 26px;
+	height: 4px;
+    margin-left: -13px;
+    margin-top: -2px;
+    background-color: #FF0000;
+}
+
+.it-why__img {
+  width: auto !important;
 }
 
 .it-why__desc {
   font-size: rem(14px);
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.it-why__desc b {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.it-why__desc--color {
   color: #ffffff;
 }
 
+/******************* why+owl *******************/
+
+
+
+.it-why .box-carousel .owl-nav .owl-next,.it-why .box-carousel .owl-nav .owl-prev {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 48%;
+  top: -60px;
+  font-size: 0;
+  background-color: #47474d;
+  right: auto
+}
+
+.it-why .box-carousel .owl-nav .owl-next:hover,.it-why .box-carousel .owl-nav .owl-prev:hover {
+  opacity: .5
+}
+
+.it-why .box-carousel .owl-nav .owl-prev {
+  right: 60%;
+  left: auto;
+}
+
+.it-why .box-carousel .owl-nav .owl-next {
+  left: 60%;
+  right: auto;
+}
+
+.it-why .box-carousel .owl-nav .owl-next:after,.it-why .box-carousel .owl-nav .owl-prev:after {
+  content: "";
+  position: absolute;
+  top: 48%;
+  width: 0;
+  height: 0;
+  margin-top: -3px;
+  border-top: 5px solid transparent;
+  border-left: 6px solid #fff;
+  border-bottom: 5px solid transparent
+}
+
+.it-why .box-carousel .owl-nav .owl-prev:after {
+  transform: scale(-1);
+  left: 42%;
+  right: auto;
+  margin-left: -2px
+}
+
+.it-why .box-carousel .owl-nav .owl-next:after {
+  transform: scale(1);
+  right: 42%;
+  left: auto;
+  margin-right: -2px
+}
+
+.it-why .box-carousel .owl-dots {
+  position: absolute;
+  top: -43px;
+  left: 50%;
+  display: block;
+  z-index: 10000;
+  max-width: 200px;
+  width: 100%;
+  margin-left: -100px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.it-why .box-carousel .owl-dots .owl-dot {
+  width: 6px;
+  height: 6px;
+  border: 3px solid transparent;
+  background: #c4c4c4;
+  border-radius: 50%;
+  transition: .2s;
+  margin: 0 5px;
+}
+
+.it-why .box-carousel .owl-dots .owl-dot.active,.it-why .box-carousel .owl-dots .owl-dot:hover {
+  background-color: #e86352
+}
 
 
 

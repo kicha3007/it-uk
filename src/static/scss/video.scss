@@ -1,0 +1,57 @@
+@import "__vars";
+@import "__mixins";
+@import "smart-grid";
+
+.it-video__wrap {
+  @include row-flex();
+}
+.it-video__half {
+  @include col();
+
+}
+
+.it-video__half--left {
+  @include size(7);
+  @include size-xs(12);
+}
+
+.it-video__half--right {
+  @include size(5);
+  @include size-xs(12);
+  align-items: center;
+  padding: 4% 2%;
+  border: 5px solid $main-color;
+}
+
+.it-video__title {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.it-video__list {
+  padding: 0;
+  margin: 0;
+}
+
+.it-video__item {
+  list-style-type: none;
+  padding-left: 12px;
+  position: relative;
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.it-video__item:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 5px;
+	height: 5px;
+  border-radius: 50%;
+  background-color: $main-color;
+}

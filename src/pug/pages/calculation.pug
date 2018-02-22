@@ -1,0 +1,47 @@
+// --------------------- it-calculation -------------------------
+
+section.it-calculation
+	.it-container
+		.it-all-title Сколько стоит програмное обеспечение?
+		.it-calculation__wrap
+			.it-calculation__top
+				.it-calculation__top-half.it-calculation__top-half--left
+					.it-calculation__time
+						.it-calculation__time-check
+							img(src="static/img/calculation/check.png", alt='').it-calculation__time-img
+						.it-calculation__time-text
+							.it-calculation__time-text-top
+								|	Первые 6 месяцев
+							.it-calculation__time-bottom
+								|	минимальный платеж!
+				.it-calculation__top-half.it-calculation__top-half--right
+					.it-calculation__other-info
+						a(href="#").it-calculation__other-info-link
+							|	Перейти на форму регистрации
+						.it-calculation__other-info-price
+							.it-calculation__other-info-price-left
+								.it-calculation__other-info-price-number
+									|	10
+							.it-calculation__other-info-price-right
+								.it-calculation__other-info-price-rub
+									|	РУБ
+								.it-calculation__other-info-price-month
+									|	МЕС
+			.it-calculation__bottom
+				.it-calculation-form__wrap
+						.it-calculation-form__title
+							|	Рассчитайте свой ежемесячный платеж (с 7го месяца):
+						.it-calculation-form__input-wrap
+							.it-calculation-form__half
+								label.it-calculation-form__input-title
+									.it-calculation-form__input-title-text
+										|	Введите количество м2 в управлении
+									input.it-calculation-form__input(type="text" name='meters', maxlength='600', value='', placeholder='500 000 м2', data-meters)
+							.it-calculation-form__equally
+							.it-calculation-form__half
+								label.it-calculation-form__input-title
+									.it-calculation-form__input-title-text
+										|	Сумма ежемесячного платежа
+									input.it-calculation-form__input(type='text', name='rub', maxlength='600', value='', placeholder='00 рублей', data-sum)
+
+

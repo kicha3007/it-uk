@@ -61,7 +61,7 @@ $(function () {
                 autoplay: true,
                 autoplayTimeout: 3000,
                 autoplayHoverPause: false,
-                dots: false,
+                dots: true,
                 responsive: {
                     0: {
                         items: 1
@@ -77,4 +77,35 @@ $(function () {
         });
 
 
+    var sumMeters = document.querySelector("[data-meters]");
+    var sumAll = document.querySelector("[data-sum]").value;
+    var sumAllValue = sumAll.value;
+    console.log(sumAllValue);
+
+
+
+    // sumMeters.onblur =  function () {
+    //     var sumMetersValue = this.value;
+    //     if (isNaN(sumMetersValue)) { // введено не число
+    //         // показать ошибку
+    //         this.classList.add("it-calculation-error");
+    //         // this.innerHTML = 'Вы ввели не число. Исправьте, пожалуйста.'
+    //     }   else {
+    //         this.classList.remove("it-calculation-error");
+    //     }
+    //
+    //     if(sumMetersValue <=  500) {
+    //         sumAllValue =   0.08;
+    //     } else if (sumMetersValue <=  1000){
+    //         sumAllValue =   0.07;
+    //     }
+    // }
+
+
+
+
+
+
 });
+
+
