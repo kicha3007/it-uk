@@ -4,7 +4,6 @@
 
 .it-number__wrap {
   @include row-flex();
-
 }
 
 .it-number__half {
@@ -12,7 +11,6 @@
   @include size(3);
   @include size-lg(6);
   @include size-xs(12);
-
   padding-top: 20px;
 }
 

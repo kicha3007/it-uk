@@ -37,11 +37,13 @@ section.it-calculation
 									.it-calculation-form__input-title-text
 										|	Введите количество м2 в управлении
 									input.it-calculation-form__input(type="text" name='meters', maxlength='600', value='', placeholder='500 000 м2', data-meters)
+									.it-calculation__error-text
+										|	Введите число в правильном формате
 							.it-calculation-form__equally
 							.it-calculation-form__half
 								label.it-calculation-form__input-title
 									.it-calculation-form__input-title-text
 										|	Сумма ежемесячного платежа
-									input.it-calculation-form__input(type='text', name='rub', maxlength='600', value='', placeholder='00 рублей', data-sum)
+									input.it-calculation-form__input(type='text', name='rub', maxlength='600', value='', placeholder='00 рублей', disabled data-sum)
 
 

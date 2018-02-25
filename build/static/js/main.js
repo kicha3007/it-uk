@@ -1,4 +1,3 @@
-
 /* ****************************** accordion ****************************** */
 
 
@@ -30,8 +29,6 @@ $(function () {
     /* ------------------- fancybox ------------------- */
 
 
-
-
     $("[data-modal]").fancybox({
         padding: 0,
         helpers: {
@@ -45,66 +42,84 @@ $(function () {
     /* ------------------- carousel ------------------- */
 
 
+    $('.box-carousel').each(function () {
+        var $this = $(this);
+        var itemsCount = $this.data("items");
+        var itemsCountPad = $this.data("itemsPad");
 
+        $this.owlCarousel({
 
-        $('.box-carousel').each(function () {
-            var $this = $(this);
-            var itemsCount = $this.data("items");
-            var itemsCountPad = $this.data("itemsPad");
-
-            $this.owlCarousel({
-
-                items: (itemsCount ? itemsCount : 1),
-                margin: 20,
-                nav: true,
-                loop: true,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                autoplayHoverPause: false,
-                dots: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: itemsCountPad ? itemsCountPad : (itemsCount ? itemsCount : 1)
-                    },
-                    1000: {
-                        items: itemsCount ? itemsCount : 1
-                    }
+            items: (itemsCount ? itemsCount : 1),
+            margin: 20,
+            nav: true,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: false,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: itemsCountPad ? itemsCountPad : (itemsCount ? itemsCount : 1)
+                },
+                1000: {
+                    items: itemsCount ? itemsCount : 1
                 }
-            });
+            }
         });
-
+    });
 
     var sumMeters = document.querySelector("[data-meters]");
-    var sumAll = document.querySelector("[data-sum]").value;
-    var sumAllValue = sumAll.value;
-    console.log(sumAllValue);
+    var sumAll = document.querySelector("[data-sum]");
+
+    /*sumMeters.oninput = function () {
+     var sumMetersValue = this.value;
+     if (isNaN(sumMetersValue)) { // введено не число
+     // показать ошибку
+     this.classList.add("it-calculation__error");
+     // this.innerHTML = 'Вы ввели не число. Исправьте, пожалуйста.'
+     } else {
+     this.classList.remove("it-calculation-error");
+     if (sumMetersValue <= 500000) {
+     sumAll.value = 0.08;
+     } else if (sumMetersValue > 500000 && sumMetersValue <= 1000000) {
+     sumAll.value = 0.07;
+     } else if (sumMetersValue > 1000000 && sumMetersValue <= 2000000) {
+     sumAll.value = 0.06;
+     } else if (sumMetersValue > 2000000 && sumMetersValue <= 5000000) {
+     sumAll.value = 0.05;
+     } else if (sumMetersValue > 5000000) {
+     sumAll.value = 0.04;
+     } else   {
+     return "Ошибка";
+     }
+
+     }
+     }*/
 
 
+    sumMeters.oninput = function () {
+        var sumMetersValue = this.value;
+        var removeError = this.classList.remove("it-calculation__error");
+        if (sumMetersValue > 0 && sumMetersValue <= 500000) {
+            sumAll.value = 0.08;
+        } else if (sumMetersValue > 500000 && sumMetersValue <= 1000000) {
+            sumAll.value = 0.07;
+        } else if (sumMetersValue > 1000000 && sumMetersValue <= 2000000) {
+            sumAll.value = 0.06;
+        } else if (sumMetersValue > 2000000 && sumMetersValue <= 5000000) {
+            sumAll.value = 0.05;
+        } else if (sumMetersValue > 5000000) {
+            sumAll.value = 0.04;
+        } else if (sumMetersValue == "") {
+            removeError;
+}       else {
+            this.classList.add("it-calculation__error");
+        }
 
-    // sumMeters.onblur =  function () {
-    //     var sumMetersValue = this.value;
-    //     if (isNaN(sumMetersValue)) { // введено не число
-    //         // показать ошибку
-    //         this.classList.add("it-calculation-error");
-    //         // this.innerHTML = 'Вы ввели не число. Исправьте, пожалуйста.'
-    //     }   else {
-    //         this.classList.remove("it-calculation-error");
-    //     }
-    //
-    //     if(sumMetersValue <=  500) {
-    //         sumAllValue =   0.08;
-    //     } else if (sumMetersValue <=  1000){
-    //         sumAllValue =   0.07;
-    //     }
-    // }
-
-
-
-
-
+    }
 
 });
 

@@ -5,9 +5,25 @@
 
 /******************* it-accordion_drop2 *******************/
 
-.it-accordion_drop2__wrap {
+.it-accordion_drop2__dropdown-list {
   margin: 0;
-  padding: 0 35px;
+  padding: 0 0;
+}
+
+.it-accordion_drop2__dropdown-toggle {
+  padding: 0;
+}
+
+.it-accordion_drop2__dropdown-title {
+  color: #37C386;
+  text-decoration: underline;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.it-accordion_drop2__inner-wrap {
+  font-size: 14px;
+  color: #37C386;
 }
 
 .it-accordion_drop2__item {
@@ -15,19 +31,22 @@
 }
 
 .it-accordion_drop2__toggle {
-  padding: 30px 20px 30px 60px;
+  padding: 5px 20px 10px 30px;
   display: flex;
+  font-weight: 700;
   flex-wrap: wrap;
   align-items: center;
   cursor: pointer;
   position: relative;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.15);
+
+  font-size: 16px;
 }
 
 .it-accordion_drop2__title {
   font-size:  14px;
   flex-grow: 1000;
   flex-basis: 400px;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 
@@ -60,16 +79,76 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 40px;
+  padding: 0 40px;
+  padding-right: 0;
+  @include phones {
+    padding-left: 15px;
+  }
 }
 
 .it-accordion_drop2__desc {
   width: 100%;
   font-weight: 300;
   font-family: "Ubuntu", sans-serif;
-  font-size: rem(14px);
   flex-basis: 400px;
   flex-grow: 1000;
-  padding-right: 5%;
+  margin: 0;
+  padding: 0;
+
+}
+
+.it-accordion_drop2__desc-half {
+  padding: 10px 3%;
+  font-size: rem(14px);
+  min-height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  word-wrap: break-word;
+
+}
+
+.it-accordion_drop2__desc-half-wrap {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  
+  
+
+
+}
+
+.it-accordion_drop2__desc-half--left {
+  width: 30%;
+
+
+}
+
+.it-accordion_drop2__desc-half--right {
+  width: 70%;
+  padding-right: 10px;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.it-accordion_drop2__desc-half-wrap:nth-child(odd) .it-accordion_drop2__desc-half--right {
+  background: #E8EDFC;
+  border-left: none;
+
+}
+
+.it-accordion_drop2__dropdown-list .it-accordion_drop2__content {
+  padding: 0;
+}
+
+.it-accordion_drop2__desc-half span {
+  color: #37C386;
+}
+
+.it-accordion_drop2__wrap {
+  margin: 0;
+  padding: 0;
 }
 

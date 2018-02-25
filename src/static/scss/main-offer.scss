@@ -32,6 +32,9 @@
   font-weight: 700;
   margin-bottom: 20px;
   color: #ffffff;
+  @include phones {
+    font-size: rem(36px);
+  }
 }
 
 .it-offer__subtitle {

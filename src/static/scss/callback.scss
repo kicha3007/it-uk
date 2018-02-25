@@ -152,6 +152,10 @@
   width: 100%;
   text-align: center;
   margin-top: 25px;
+  margin-bottom: 10px;
+  @include tablets {
+    padding-left: 0;
+  }
 }
 
 .it-callback__time {
@@ -183,6 +187,8 @@
 .it-form--hide.success .it-form__success {
   display: block;
 }
+
+
 
 
 /******************* it-checkbox *******************/
@@ -252,4 +258,6 @@
   flex-basis: 100px;
   flex-grow: 1;
   font-weight: 400;
+
 }
+

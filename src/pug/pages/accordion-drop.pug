@@ -1,5 +1,6 @@
 // --------------------- it-accordion_drop2 -------------------------
-section.it-accordion_drop2
+
+section.it-accordion_drop2.it-all--indent
 	.it-container
 		.it-all-title
 			| Ответы на часто задаваемые вопросы:
@@ -11,14 +12,238 @@ section.it-accordion_drop2
 					.it-accordion_drop2__title
 						| ГИС ЖКХ
 				.it-accordion_drop2__content(data-it-accord-item='')
-					.it-accordion_drop2__desc
-						ul.it-accordion_drop2__wrap(data-it-accord-wrap='')
+					ul.it-accordion_drop2__desc
+						li.it-accordion_drop2__desc-half-wrap
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+								|	Чтение данных с ГИС ЖКХ
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+								|	Возможность импорта данных, размещенных на сайте ГИС ЖКХ, в АСУ Жилищный Стандарт (по подписке, активированной для АСУ Жилищный Стандарт)
+						li.it-accordion_drop2__desc-half-wrap
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+								|	Запись данных на ГИС ЖКХ через API
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+								p
+									|    Возможность экспорта данных на сайт ГИС ЖКХ, по подписке, активированной для ИС Жилищный Стандарт.
+									| пп. 1-2;3.1-3.3; 7-8; 14-15;17-20
+									span
+										|	Раздела 10 Приказа 74-114
+								p
+									|    Возможность экспорта данных на сайт ГИС ЖКХ, по подписке, активированной для ИС Жилищный Стандарт. пп. 3.2; 3.4-3.6; 4.1; 5.1-5.4; 9-10;12 *
+						li.it-accordion_drop2__desc-half-wrap
+								.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+									|  Автоматическое заполнение шаблонов импорта по формату ГИС ЖКХ
+								.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+									|  Возможность выгрузки данных, размещенных в АСУ Жилищный Стандарт, в шаблоны формата xlsx, соответствующие актуальным шаблонам ГИС ЖКХ для полуавтоматического импорта данных на ГИС ЖКХ по Управляющей Организации
+						li.it-accordion_drop2__desc-half-wrap
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+								|    Импорт данных в АСУ
+								| с результирующих файлов-шаблонов ГИС ЖКХ
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+								|    Возможность импортировать в АСУ Жилищный Стандарт данные с файлов, генерируемых ГИС ЖКХ в процессе импорта данных, и сохранения в АСУ Жилищный Стандарт уникальных кодов объектов для последующего оперирования ими
+						li.it-accordion_drop2__desc-half-wrap
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+								|    Печатная форма анкеты Дома
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+								|    Вывод печатной формы анкеты по дому в соответствии с 882 Постановлением
+						ul.it-accordion_drop2__dropdown-list(data-it-accord-wrap='')
 							li.it-accordion_drop2__item
-								.it-accordion_drop2__toggle(data-it-accord-toggle='')
-									.it-accordion_drop2__sign-wrap(data-it-sign='')
-										.it-accordion_drop2__sign
-									.it-accordion_drop2__title
-										| Какие могут быть последствия при невыполнении требований по размещению информации в ГИС ЖКХ?
+								.it-accordion_drop2__dropdown-toggle(data-it-accord-toggle='')
+									.it-accordion_drop2__dropdown-title
+										| Показать еще функции по ГИС ЖКХ
 								.it-accordion_drop2__content(data-it-accord-item='')
 									.it-accordion_drop2__desc
-										| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascльную путевку входит: размещение, питание, бассейн 1 раз в сутки, медицинские услуги(кислородный коктейль и галокамера), досуг.
+										ul.it-accordion_drop2__desc
+											li.it-accordion_drop2__desc-half-wrap
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+													|    Чтение данных с ГИС ЖКХ
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+													|    Возможность импорта данных, размещенных на сайте ГИС ЖКХ, в АСУ Жилищный Стандарт (по подписке, активированной для АСУ Жилищный Стандарт)
+											li.it-accordion_drop2__desc-half-wrap
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+													|    Запись данных на ГИС ЖКХ через API
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+													p
+														|    Возможность экспорта данных на сайт ГИС ЖКХ, по подписке, активированной для ИС Жилищный Стандарт.
+														| пп. 1-2;3.1-3.3; 7-8; 14-15;17-20
+														span
+															|    Раздела 10 Приказа 74-114
+													p
+														|    Возможность экспорта данных на сайт ГИС ЖКХ, по подписке, активированной для ИС Жилищный Стандарт. пп. 3.2; 3.4-3.6; 4.1; 5.1-5.4; 9-10;12 *
+											li.it-accordion_drop2__desc-half-wrap
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+													|  Автоматическое заполнение шаблонов импорта по формату ГИС ЖКХ
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+													|  Возможность выгрузки данных, размещенных в АСУ Жилищный Стандарт, в шаблоны формата xlsx, соответствующие актуальным шаблонам ГИС ЖКХ для полуавтоматического импорта данных на ГИС ЖКХ по Управляющей Организации
+											li.it-accordion_drop2__desc-half-wrap
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+													|    Импорт данных в АСУ
+													| с результирующих файлов-шаблонов ГИС ЖКХ
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+													|    Возможность импортировать в АСУ Жилищный Стандарт данные с файлов, генерируемых ГИС ЖКХ в процессе импорта данных, и сохранения в АСУ Жилищный Стандарт уникальных кодов объектов для последующего оперирования ими
+											li.it-accordion_drop2__desc-half-wrap
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+													|    Печатная форма анкеты Дома
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+													|    Вывод печатной формы анкеты по дому в соответствии с 882 Постановлением
+		ul.it-accordion_drop2__wrap(data-it-accord-wrap='')
+			li.it-accordion_drop2__item
+				.it-accordion_drop2__toggle(data-it-accord-toggle='')
+					.it-accordion_drop2__sign-wrap(data-it-sign='')
+						.it-accordion_drop2__sign
+					.it-accordion_drop2__title
+						| Реформа ЖКХ
+				.it-accordion_drop2__content(data-it-accord-item='')
+					ul.it-accordion_drop2__desc
+						li.it-accordion_drop2__desc-half-wrap
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+								|    Чтение данных с ГИС ЖКХ
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+								|    Возможность импорта данных, размещенных на сайте ГИС ЖКХ, в АСУ Жилищный Стандарт (по подписке, активированной для АСУ Жилищный Стандарт)
+						li.it-accordion_drop2__desc-half-wrap
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+								|    Запись данных на ГИС ЖКХ через API
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+								p
+									|    Возможность экспорта данных на сайт ГИС ЖКХ, по подписке, активированной для ИС Жилищный Стандарт.
+									| пп. 1-2;3.1-3.3; 7-8; 14-15;17-20
+									span
+										|    Раздела 10 Приказа 74-114
+								p
+									|    Возможность экспорта данных на сайт ГИС ЖКХ, по подписке, активированной для ИС Жилищный Стандарт. пп. 3.2; 3.4-3.6; 4.1; 5.1-5.4; 9-10;12 *
+						li.it-accordion_drop2__desc-half-wrap
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+								|  Автоматическое заполнение шаблонов импорта по формату ГИС ЖКХ
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+								|  Возможность выгрузки данных, размещенных в АСУ Жилищный Стандарт, в шаблоны формата xlsx, соответствующие актуальным шаблонам ГИС ЖКХ для полуавтоматического импорта данных на ГИС ЖКХ по Управляющей Организации
+						li.it-accordion_drop2__desc-half-wrap
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+								|    Импорт данных в АСУ
+								| с результирующих файлов-шаблонов ГИС ЖКХ
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+								|    Возможность импортировать в АСУ Жилищный Стандарт данные с файлов, генерируемых ГИС ЖКХ в процессе импорта данных, и сохранения в АСУ Жилищный Стандарт уникальных кодов объектов для последующего оперирования ими
+						li.it-accordion_drop2__desc-half-wrap
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+								|    Печатная форма анкеты Дома
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+								|    Вывод печатной формы анкеты по дому в соответствии с 882 Постановлением
+						ul.it-accordion_drop2__dropdown-list(data-it-accord-wrap='')
+							li.it-accordion_drop2__item
+								.it-accordion_drop2__dropdown-toggle(data-it-accord-toggle='')
+									.it-accordion_drop2__dropdown-title
+										| Показать еще функции по ГИС ЖКХ
+								.it-accordion_drop2__content(data-it-accord-item='')
+									.it-accordion_drop2__desc
+										ul.it-accordion_drop2__desc
+											li.it-accordion_drop2__desc-half-wrap
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+													|    Чтение данных с ГИС ЖКХ
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+													|    Возможность импорта данных, размещенных на сайте ГИС ЖКХ, в АСУ Жилищный Стандарт (по подписке, активированной для АСУ Жилищный Стандарт)
+											li.it-accordion_drop2__desc-half-wrap
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+													|    Запись данных на ГИС ЖКХ через API
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+													p
+														|    Возможность экспорта данных на сайт ГИС ЖКХ, по подписке, активированной для ИС Жилищный Стандарт.
+														| пп. 1-2;3.1-3.3; 7-8; 14-15;17-20
+														span
+															|    Раздела 10 Приказа 74-114
+													p
+														|    Возможность экспорта данных на сайт ГИС ЖКХ, по подписке, активированной для ИС Жилищный Стандарт. пп. 3.2; 3.4-3.6; 4.1; 5.1-5.4; 9-10;12 *
+											li.it-accordion_drop2__desc-half-wrap
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+													|  Автоматическое заполнение шаблонов импорта по формату ГИС ЖКХ
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+													|  Возможность выгрузки данных, размещенных в АСУ Жилищный Стандарт, в шаблоны формата xlsx, соответствующие актуальным шаблонам ГИС ЖКХ для полуавтоматического импорта данных на ГИС ЖКХ по Управляющей Организации
+											li.it-accordion_drop2__desc-half-wrap
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+													|    Импорт данных в АСУ
+													| с результирующих файлов-шаблонов ГИС ЖКХ
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+													|    Возможность импортировать в АСУ Жилищный Стандарт данные с файлов, генерируемых ГИС ЖКХ в процессе импорта данных, и сохранения в АСУ Жилищный Стандарт уникальных кодов объектов для последующего оперирования ими
+											li.it-accordion_drop2__desc-half-wrap
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+													|    Печатная форма анкеты Дома
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+													|    Вывод печатной формы анкеты по дому в соответствии с 882 Постановлением
+		ul.it-accordion_drop2__wrap(data-it-accord-wrap='')
+			li.it-accordion_drop2__item
+				.it-accordion_drop2__toggle(data-it-accord-toggle='')
+					.it-accordion_drop2__sign-wrap(data-it-sign='')
+						.it-accordion_drop2__sign
+					.it-accordion_drop2__title
+						| Сайт УК
+				.it-accordion_drop2__content(data-it-accord-item='')
+					ul.it-accordion_drop2__desc
+						li.it-accordion_drop2__desc-half-wrap
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+								|    Чтение данных с ГИС ЖКХ
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+								|    Возможность импорта данных, размещенных на сайте ГИС ЖКХ, в АСУ Жилищный Стандарт (по подписке, активированной для АСУ Жилищный Стандарт)
+						li.it-accordion_drop2__desc-half-wrap
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+								|    Запись данных на ГИС ЖКХ через API
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+								p
+									|    Возможность экспорта данных на сайт ГИС ЖКХ, по подписке, активированной для ИС Жилищный Стандарт.
+									| пп. 1-2;3.1-3.3; 7-8; 14-15;17-20
+									span
+										|    Раздела 10 Приказа 74-114
+								p
+									|    Возможность экспорта данных на сайт ГИС ЖКХ, по подписке, активированной для ИС Жилищный Стандарт. пп. 3.2; 3.4-3.6; 4.1; 5.1-5.4; 9-10;12 *
+						li.it-accordion_drop2__desc-half-wrap
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+								|  Автоматическое заполнение шаблонов импорта по формату ГИС ЖКХ
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+								|  Возможность выгрузки данных, размещенных в АСУ Жилищный Стандарт, в шаблоны формата xlsx, соответствующие актуальным шаблонам ГИС ЖКХ для полуавтоматического импорта данных на ГИС ЖКХ по Управляющей Организации
+						li.it-accordion_drop2__desc-half-wrap
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+								|    Импорт данных в АСУ
+								| с результирующих файлов-шаблонов ГИС ЖКХ
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+								|    Возможность импортировать в АСУ Жилищный Стандарт данные с файлов, генерируемых ГИС ЖКХ в процессе импорта данных, и сохранения в АСУ Жилищный Стандарт уникальных кодов объектов для последующего оперирования ими
+						li.it-accordion_drop2__desc-half-wrap
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+								|    Печатная форма анкеты Дома
+							.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+								|    Вывод печатной формы анкеты по дому в соответствии с 882 Постановлением
+						ul.it-accordion_drop2__dropdown-list(data-it-accord-wrap='')
+							li.it-accordion_drop2__item
+								.it-accordion_drop2__dropdown-toggle(data-it-accord-toggle='')
+									.it-accordion_drop2__dropdown-title
+										| Показать еще функции по ГИС ЖКХ
+								.it-accordion_drop2__content(data-it-accord-item='')
+									.it-accordion_drop2__desc
+										ul.it-accordion_drop2__desc
+											li.it-accordion_drop2__desc-half-wrap
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+													|    Чтение данных с ГИС ЖКХ
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+													|    Возможность импорта данных, размещенных на сайте ГИС ЖКХ, в АСУ Жилищный Стандарт (по подписке, активированной для АСУ Жилищный Стандарт)
+											li.it-accordion_drop2__desc-half-wrap
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+													|    Запись данных на ГИС ЖКХ через API
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+													p
+														|    Возможность экспорта данных на сайт ГИС ЖКХ, по подписке, активированной для ИС Жилищный Стандарт.
+														| пп. 1-2;3.1-3.3; 7-8; 14-15;17-20
+														span
+															|    Раздела 10 Приказа 74-114
+													p
+														|    Возможность экспорта данных на сайт ГИС ЖКХ, по подписке, активированной для ИС Жилищный Стандарт. пп. 3.2; 3.4-3.6; 4.1; 5.1-5.4; 9-10;12 *
+											li.it-accordion_drop2__desc-half-wrap
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+													|  Автоматическое заполнение шаблонов импорта по формату ГИС ЖКХ
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+													|  Возможность выгрузки данных, размещенных в АСУ Жилищный Стандарт, в шаблоны формата xlsx, соответствующие актуальным шаблонам ГИС ЖКХ для полуавтоматического импорта данных на ГИС ЖКХ по Управляющей Организации
+											li.it-accordion_drop2__desc-half-wrap
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+													|    Импорт данных в АСУ
+													| с результирующих файлов-шаблонов ГИС ЖКХ
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+													|    Возможность импортировать в АСУ Жилищный Стандарт данные с файлов, генерируемых ГИС ЖКХ в процессе импорта данных, и сохранения в АСУ Жилищный Стандарт уникальных кодов объектов для последующего оперирования ими
+											li.it-accordion_drop2__desc-half-wrap
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--left
+													|    Печатная форма анкеты Дома
+												.it-accordion_drop2__desc-half.it-accordion_drop2__desc-half--right
+													|    Вывод печатной формы анкеты по дому в соответствии с 882 Постановлением
