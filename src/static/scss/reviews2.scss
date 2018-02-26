@@ -57,11 +57,12 @@
 
 .it-reviews2 .box-carousel .owl-nav .owl-next,.it-reviews2 .box-carousel .owl-nav .owl-prev {
   position: absolute;
-  width: 36px;
+  width: 62px;
   height: 60px;
   top: 50%;
   font-size: 0;
   right: auto;
+  margin-top: -30px;
   background-color: #ffffff;
   @include phones {
     width: 27px;

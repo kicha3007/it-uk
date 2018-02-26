@@ -18,13 +18,12 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .it-offer__wrap {
-  padding: 5% 0 12%;
+  padding: 7% 0 20%;
   position: relative;
-
 }
 
 .it-offer__title {
@@ -59,4 +58,58 @@
 
 .it-offer__buttons .it-offer__btn {
   padding: 15px 10px;
+}
+
+
+/* ---------------------------------------------- /*
+ * Mouse animate icon
+/* ---------------------------------------------- */
+
+.it-offer__mouse-icon {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  height: 40px;
+  width: 26px;
+  margin-left: -13px;
+  display: block;
+  z-index: 10;
+}
+
+.it-offer__wheel {
+  position: relative;
+  border-radius: 10px;
+  background: #fff;
+  width: 3px;
+  height: 7px;
+  top: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-animation-name: drop;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  animation-name: drop;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+
+@-webkit-keyframes drop	{
+  0%   { top:5px;  opacity: 0;}
+  30%  { top:10px; opacity: 1;}
+  100% { top:25px; opacity: 0;}
+}
+
+@keyframes drop	{
+  0%   { top:5px;  opacity: 0;}
+  30%  { top:10px; opacity: 1;}
+  100% { top:25px; opacity: 0;}
 }

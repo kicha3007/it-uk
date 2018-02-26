@@ -126,13 +126,19 @@
 }
 
 .it-why .box-carousel .owl-nav .owl-prev {
-  right: 60%;
+  right: 54%;
   left: auto;
+  @include tablets {
+    right: 62%;
+  }
 }
 
 .it-why .box-carousel .owl-nav .owl-next {
-  left: 60%;
+  left: 54%;
   right: auto;
+  @include tablets {
+    left: 62%;
+  }
 }
 
 .it-why .box-carousel .owl-nav .owl-next:after,.it-why .box-carousel .owl-nav .owl-prev:after {
@@ -190,7 +196,7 @@
 }
 
 .it-why .box-carousel .owl-dots .owl-dot.active,.it-why .box-carousel .owl-dots .owl-dot:hover {
-  background-color: #e86352
+  background-color: $main-color
 }
 
 
