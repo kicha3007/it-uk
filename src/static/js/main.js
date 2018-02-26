@@ -71,8 +71,7 @@ $(function () {
         });
     });
 
-    var sumMeters = document.querySelector("[data-meters]");
-    var sumAll = document.querySelector("[data-sum]");
+
 
     /*sumMeters.oninput = function () {
      var sumMetersValue = this.value;
@@ -99,24 +98,29 @@ $(function () {
      }
      }*/
 
+    var sumMeters = document.querySelector("[data-meters]");
+    var sumAll = document.querySelector("[data-sum]");
 
     sumMeters.oninput = function () {
         var sumMetersValue = this.value;
+        var sumDefault = sumAll.value = "00 рублей";
         var removeError = this.classList.remove("it-calculation__error");
         if (sumMetersValue > 0 && sumMetersValue <= 500000) {
-            sumAll.value = 0.08;
+            sumAll.value = 0.08 *  sumMetersValue;
         } else if (sumMetersValue > 500000 && sumMetersValue <= 1000000) {
-            sumAll.value = 0.07;
+            sumAll.value = 0.07 *  sumMetersValue;
         } else if (sumMetersValue > 1000000 && sumMetersValue <= 2000000) {
-            sumAll.value = 0.06;
+            sumAll.value = 0.06 *  sumMetersValue;
         } else if (sumMetersValue > 2000000 && sumMetersValue <= 5000000) {
-            sumAll.value = 0.05;
+            sumAll.value = 0.05 *  sumMetersValue;
         } else if (sumMetersValue > 5000000) {
-            sumAll.value = 0.04;
-        } else if (sumMetersValue == "") {
-            removeError;
+            sumAll.value = 0.04 *  sumMetersValue;
+        } else if (sumMetersValue === "") {
+            this.classList.remove("it-calculation__error");
+            sumDefault;
 }       else {
             this.classList.add("it-calculation__error");
+            sumDefault;
         }
 
     }

@@ -7,8 +7,8 @@ section.it-calculation
 			.it-calculation__top
 				.it-calculation__top-half.it-calculation__top-half--left
 					.it-calculation__time
-						.it-calculation__time-check
-							img(src="static/img/calculation/check.png", alt='').it-calculation__time-img
+						//.it-calculation__time-check
+						//	img(src="static/img/calculation/check.png", alt='').it-calculation__time-img
 						.it-calculation__time-text
 							.it-calculation__time-text-top
 								|	Первые 6 месяцев
@@ -44,6 +44,6 @@ section.it-calculation
 								label.it-calculation-form__input-title
 									.it-calculation-form__input-title-text
 										|	Сумма ежемесячного платежа
-									input.it-calculation-form__input(type='text', name='rub', maxlength='600', value='', placeholder='00 рублей', disabled data-sum)
+									input.it-calculation-form__input.it-calculation-form__input--color(type='text', name='rub', maxlength='600', value='', placeholder='00 рублей', disabled data-sum)
 
 
