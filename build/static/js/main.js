@@ -1,6 +1,5 @@
 /* ****************************** accordion ****************************** */
 
-
 $(function () {
     var $accordWrap = $("[data-it-accord-wrap]");
     var $accordItem = $("[data-it-accord-item]");
@@ -25,9 +24,7 @@ $(function () {
          $(this).parent().find("[]").toggle();*/
     });
 
-
     /* ------------------- fancybox ------------------- */
-
 
     $("[data-modal]").fancybox({
         padding: 0,
@@ -40,7 +37,6 @@ $(function () {
     });
 
     /* ------------------- carousel ------------------- */
-
 
     $('.box-carousel').each(function () {
         var $this = $(this);
@@ -70,8 +66,6 @@ $(function () {
             }
         });
     });
-
-
 
     /*sumMeters.oninput = function () {
      var sumMetersValue = this.value;
@@ -103,27 +97,31 @@ $(function () {
 
     sumMeters.oninput = function () {
         var sumMetersValue = this.value;
-        var sumDefault = sumAll.value = "00 рублей";
+        var sumDefault = sumAll.value = "00 руб.";
         var removeError = this.classList.remove("it-calculation__error");
         if (sumMetersValue > 0 && sumMetersValue <= 500000) {
-            sumAll.value = 0.08 *  sumMetersValue;
+            sumAll.value = 0.08 * sumMetersValue + " руб.";
         } else if (sumMetersValue > 500000 && sumMetersValue <= 1000000) {
-            sumAll.value = 0.07 *  sumMetersValue;
+            sumAll.value = 0.07 * sumMetersValue + " руб.";
         } else if (sumMetersValue > 1000000 && sumMetersValue <= 2000000) {
-            sumAll.value = 0.06 *  sumMetersValue;
+            sumAll.value = 0.06 * sumMetersValue + " руб.";
         } else if (sumMetersValue > 2000000 && sumMetersValue <= 5000000) {
-            sumAll.value = 0.05 *  sumMetersValue;
+            sumAll.value = 0.05 * sumMetersValue + " руб.";
         } else if (sumMetersValue > 5000000) {
-            sumAll.value = 0.04 *  sumMetersValue;
+            sumAll.value = 0.04 * sumMetersValue + " руб.";
         } else if (sumMetersValue === "") {
             this.classList.remove("it-calculation__error");
             sumDefault;
-}       else {
+        } else {
             this.classList.add("it-calculation__error");
             sumDefault;
         }
 
-    }
+    };
+
+    /* ------------------- mask ------------------- */
+
+    $("[data-phone]").mask("+7 (999) 99-99-999");
 
 });
 

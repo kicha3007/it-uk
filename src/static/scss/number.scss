@@ -3,21 +3,32 @@
 @import "smart-grid";
 
 .it-number__wrap {
-  @include row-flex();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  @include laptop {
+    justify-content: center;
+    margin: 0 -15px;
+  }
 }
 
 .it-number__half {
-  @include col();
-  @include size(3);
-  @include size-lg(6);
-  @include size-xs(12);
   padding-top: 20px;
+  max-width: 270px;
+  @include laptop {
+    margin: 0 15px;
+    text-align: center;
+  }
 }
 
 .it-number__title {
   color: $main-color;
   font-size: rem(50px);
   margin-bottom: 20px;
+  @include laptop {
+    width: 100%;
+  }
 }
 
 .it-number__title span {
@@ -26,6 +37,9 @@
 }
 
 .it-number__subtitle {
-  font-size: rem(18px);
+  color:  rgba(0, 0, 0, 0.87);
   font-weight: 300;
+  @include laptop {
+    width: 100%;
+  }
 }

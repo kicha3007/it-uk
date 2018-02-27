@@ -32,7 +32,7 @@
 }
 
 .it-accordion2__title {
-  font-size:  14px;
+  font-size:  rem(16px);
   flex-grow: 1000;
   flex-basis: 400px;
 }
@@ -82,9 +82,10 @@
   width: 100%;
   font-weight: 300;
   font-family: "Ubuntu", sans-serif;
-  font-size: rem(14px);
+  font-size: rem(16px);
   flex-basis: 400px;
   flex-grow: 1000;
+  line-height: 1.5;
   padding-right: 5%;
 }
 

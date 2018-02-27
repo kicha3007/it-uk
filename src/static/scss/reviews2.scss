@@ -5,12 +5,15 @@
 
 .it-reviews2__wrap {
   background-color: rgba(232, 237, 252, 1);
+  margin: 0;
   padding: 7% 11%;
 
 }
 
 .it-reviews2__inner-wrap {
   @include row-flex();
+  padding: 0;
+  list-style-type: none;
 }
 
 .it-reviews2__half {
@@ -21,7 +24,8 @@
   @include size(3);
   @include size-xs(12);
   align-items: center;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
   @include phones {
     margin-bottom: 20px;
   }
@@ -33,9 +37,10 @@
 }
 
 .it-reviews2__desc {
-  font-size: 14px;
+  font-size: rem(16px);
   color: rgba(0, 0, 0, 0.54);
   margin-bottom: 25px;
+  min-height: 120px;
 }
 
 .it-reviews2__adress {
@@ -46,7 +51,7 @@
 }
 
 .it-reviews2__city {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.84);
   font-size: 12px;
   font-weight: 300;
 }
@@ -105,4 +110,21 @@
   right: 0;
   left: auto;
   margin-right: -2px
+}
+
+.it-reviews2__img-wrap {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.it-reviews2__img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

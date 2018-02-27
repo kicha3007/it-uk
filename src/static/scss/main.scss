@@ -68,7 +68,7 @@ body * {
 //}
 
 .it-all-title {
-  padding-top: 4%;
+  padding-top: 6%;
   padding-bottom: 2%;
   font-size: rem(24px);
   line-height: 1.4;
@@ -130,13 +130,13 @@ body * {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.25;
   text-align: center;
   user-select: none;
   border: none;
   padding: rem(12px) rem(10px);
-  font-size: 14px;
+  font-size: 16px;
   transition: all 0.2s ease-in-out;
   background-color: $main-color;
   color: #ffffff;

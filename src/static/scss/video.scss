@@ -11,15 +11,15 @@
 }
 
 .it-video__half--left {
-  @include size(7);
+  @include size(5);
   @include size-xs(12);
 }
 
 .it-video__half--right {
-  @include size(5);
+  @include size(7);
   @include size-xs(12);
   align-items: center;
-  padding: 4% 2%;
+  padding: 4% 5%;
   border: 5px solid $main-color;
 }
 
@@ -39,9 +39,9 @@
   list-style-type: none;
   padding-left: 12px;
   position: relative;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
   font-weight: 300;
-  font-size: 12px;
+  font-size: rem(16px);
 }
 
 .it-video__item:before {
